@@ -4,9 +4,11 @@ import App from "./App.tsx";
 import "./index.css";
 import "./data-providers";
 import "./chai-blocks";
+import { Analytics } from "@vercel/analytics/react";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <App />
+    <Analytics />
   </React.StrictMode>,
 );
