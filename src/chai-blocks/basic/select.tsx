@@ -39,7 +39,6 @@ const SelectBlock = (
         id={fieldId}
         {...styles}
         {...blockProps}
-        placeholder={placeholder}
         required={required}
         multiple={_multiple as boolean}
         name={fieldName}
@@ -65,7 +64,6 @@ const SelectBlock = (
       <select
         {...inputStyles}
         id={fieldId}
-        placeholder={placeholder}
         required={required}
         multiple={_multiple as boolean}
         name={fieldName}
