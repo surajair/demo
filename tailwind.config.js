@@ -4,7 +4,7 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "node_modules/@chaibuilder/sdk/dist/*.{js,cjs}",
+    "./node_modules/@chaibuilder/sdk/dist/*.{js,cjs}",
   ],
   theme: {
     extend: {
@@ -65,5 +65,4 @@ export default {
     },
   },
   plugins: [],
-}
-
+};

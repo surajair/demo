@@ -1,35 +1,53 @@
 import "@chaibuilder/sdk/styles";
-import "./App.css";
 import { ChaiBuilderEditor } from "@chaibuilder/sdk";
 import React from "react";
+import { useAtom } from "jotai";
+import {
+  lsBlocksAtom,
+  lsBrandingOptionsAtom,
+  lsProvidersAtom,
+} from "./atoms.ts";
 
 const Logo: React.FC<any> = () => {
   return (
-    <a
-      href="https://chaibuilder.com"
-      target={"_blank"}
-      className="flex mx-auto items-center space-x-2 mb-2"
-    >
-      <span className="block w-fit text-lg font-bold underline">
-        This is a demo site
-      </span>
-    </a>
+    <div className={"font-normal text-sm"}>
+      This is a demo site. Change are stored locally. Visit{" "}
+      <a
+        target={"_blank"}
+        className="text-orange-500 underline"
+        href={"/preview"}
+      >
+        /preview
+      </a>{" "}
+      to view your page
+    </div>
   );
 };
 
+const Panel = () => "";
+
 function App() {
+  const [blocks, setBlocks] = useAtom(lsBlocksAtom);
+  const [brandingOptions, setBrandingOptions] = useAtom(lsBrandingOptionsAtom);
+  const [providers, setProviders] = useAtom(lsProvidersAtom);
   return (
     <>
       <ChaiBuilderEditor
-        topBarComponents={{
-          left: [Logo],
+        topBarComponents={{ left: [Logo], center: [], right: [] }}
+        sideBarComponents={{
+          top: [{ name: "Panel", panel: Panel, icon: "PanelIcon" }],
+          bottom: [],
         }}
-        onSaveBrandingOptions={async (arg) => {
-          console.log(arg);
+        blocks={blocks}
+        dataProviders={providers}
+        brandingOptions={brandingOptions}
+        onSavePage={async ({ blocks, providers }: any) => {
+          setBlocks(blocks);
+          setProviders(providers);
           return true;
         }}
-        onSavePage={async (arg) => {
-          console.log(arg);
+        onSaveBrandingOptions={async (options: any) => {
+          setBrandingOptions(options);
           return true;
         }}
       />
