@@ -12,7 +12,7 @@ function Preview() {
   useEffect(() => {
     (async () => {
       const styles = await getStylesForPageData({
-        page: { blocks: blocks },
+        page: { blocks },
         project: { brandingOptions },
       });
       setStyles(styles);

@@ -23,9 +23,6 @@ const Logo: React.FC<any> = () => {
     </div>
   );
 };
-
-const Panel = () => "";
-
 function App() {
   const [blocks, setBlocks] = useAtom(lsBlocksAtom);
   const [brandingOptions, setBrandingOptions] = useAtom(lsBrandingOptionsAtom);
@@ -34,10 +31,6 @@ function App() {
     <>
       <ChaiBuilderEditor
         topBarComponents={{ left: [Logo], center: [], right: [] }}
-        sideBarComponents={{
-          top: [{ name: "Panel", panel: Panel, icon: "PanelIcon" }],
-          bottom: [],
-        }}
         blocks={blocks}
         dataProviders={providers}
         brandingOptions={brandingOptions}
