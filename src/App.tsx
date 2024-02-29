@@ -13,7 +13,7 @@ const Logo: React.FC = () => {
         className="text-orange-500 underline"
         href={"/preview"}
       >
-        /preview
+        &nbsp;/preview&nbsp;
       </a>
       to view your page
     </div>

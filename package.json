@@ -10,8 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@chaibuilder/runtime": "^0.1.0",
-    "@chaibuilder/sdk": "^1.0.20",
+    "@chaibuilder/runtime": "^0.1.2",
+    "@chaibuilder/sdk": "^1.0.21",
     "@radix-ui/react-icons": "^1.3.0",
     "@vercel/analytics": "^1.1.3",
     "jotai": "^2.6.5",

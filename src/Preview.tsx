@@ -1,6 +1,5 @@
 import { useAtom } from "jotai";
 import { useEffect, useState } from "react";
-import "@chaibuilder/sdk/blocks";
 import { getStylesForPageData } from "@chaibuilder/sdk/lib";
 import { RenderChaiBlocks } from "@chaibuilder/sdk/render";
 import { lsBlocksAtom, lsBrandingOptionsAtom } from "./atoms";
