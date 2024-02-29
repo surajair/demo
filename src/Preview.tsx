@@ -1,13 +1,14 @@
-import { RenderChaiBlocks } from "@chaibuilder/sdk/render";
 import { useAtom } from "jotai";
-import { lsBlocksAtom, lsBrandingOptionsAtom } from "./atoms";
 import { useEffect, useState } from "react";
+import "@chaibuilder/sdk/blocks";
 import { getStylesForPageData } from "@chaibuilder/sdk/lib";
+import { RenderChaiBlocks } from "@chaibuilder/sdk/render";
+import { lsBlocksAtom, lsBrandingOptionsAtom } from "./atoms";
 
 function Preview() {
   const [blocks] = useAtom(lsBlocksAtom);
   const [brandingOptions] = useAtom(lsBrandingOptionsAtom);
-  const [allStyles, setStyles] = useState("");
+  const [allStyles, setStyles] = useState<string>();
 
   useEffect(() => {
     (async () => {
