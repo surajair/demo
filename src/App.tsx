@@ -15,7 +15,14 @@ const Logo: React.FC = () => {
       >
         &nbsp;/preview&nbsp;
       </a>
-      to view your page
+      to view your page.&nbsp;
+      <a
+        href={"https://github.com/surajair/demo"}
+        target={"_blank"}
+        className="text-orange-500 underline"
+      >
+        Source code
+      </a>
     </div>
   );
 };
