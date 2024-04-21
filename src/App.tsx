@@ -1,12 +1,14 @@
 import "@chaibuilder/sdk/styles";
 import { ChaiBuilderEditor } from "@chaibuilder/sdk";
-import React from "react";
+import React, { lazy } from "react";
 import { useAtom } from "jotai";
 import { lsBlocksAtom, lsBrandingOptionsAtom, lsProvidersAtom } from "./atoms";
 
+const Star = lazy(() => import("./Star.tsx"));
+
 const Logo: React.FC = () => {
   return (
-    <div className={"font-normal text-sm"}>
+    <div className={"font-normal flex items-center text-sm"}>
       This is a demo site. Changes are stored locally. Visit
       <a
         target={"_blank"}
@@ -23,9 +25,12 @@ const Logo: React.FC = () => {
       >
         Source code
       </a>
+      &nbsp; | &nbsp;
+      <Star />
     </div>
   );
 };
+
 function App() {
   const [blocks, setBlocks] = useAtom(lsBlocksAtom);
   const [brandingOptions, setBrandingOptions] = useAtom(lsBrandingOptionsAtom);
