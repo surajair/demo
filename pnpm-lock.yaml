@@ -1,8 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@chaibuilder/runtime': ^0.1.6
-  '@chaibuilder/sdk': ^1.0.24
+  '@chaibuilder/runtime': ^0.1.8
+  '@chaibuilder/sdk': ^1.1.2
   '@radix-ui/react-icons': ^1.3.0
   '@types/lodash': ^4.14.202
   '@types/react': ^18.2.43
@@ -29,8 +29,8 @@ specifiers:
   vite: ^5.0.8
 
 dependencies:
-  '@chaibuilder/runtime': 0.1.6_tailwindcss@3.4.1
-  '@chaibuilder/sdk': 1.0.24_cfcgkipsm6rw25tarlbc3z4tu4
+  '@chaibuilder/runtime': 0.1.8_tailwindcss@3.4.1
+  '@chaibuilder/sdk': 1.1.2_cfcgkipsm6rw25tarlbc3z4tu4
   '@radix-ui/react-icons': 1.3.0_react@18.2.0
   '@vercel/analytics': 1.1.3
   jotai: 2.6.5_eteh3so6nztr56vqc4nbg6qqla
@@ -82,8 +82,8 @@ packages:
       '@types/node': 18.19.21
     dev: false
 
-  /@chaibuilder/runtime/0.1.6_tailwindcss@3.4.1:
-    resolution: {integrity: sha512-ouwfAEQ3+MWOfngukQ31pSWojJrz1sfeDpXrA6XuVfZwrMnXZzonxPqXJh12eW29s8dXUIZBuvEVxeLNEvJoVQ==}
+  /@chaibuilder/runtime/0.1.8_tailwindcss@3.4.1:
+    resolution: {integrity: sha512-pzbdpeyPR3fD3UAO145Qi0kvlDyvBt8N7bKmU7pmkkmgR+4qYv2ByX6VIaZo83xhpNzY/QhplSHOggZVNgRVAA==}
     dependencies:
       '@radix-ui/react-icons': 1.3.0_react@18.2.0
       clsx: 2.1.0
@@ -95,11 +95,11 @@ packages:
       - tailwindcss
     dev: false
 
-  /@chaibuilder/sdk/1.0.24_cfcgkipsm6rw25tarlbc3z4tu4:
-    resolution: {integrity: sha512-rqM01LUCAniZ7jN/liTNIVL55v+W52Wm2Cqg/kEdOuwLTcV2BSSoPpkpUt+pFuKDGyAg8u01XHRWnYhE4/pacQ==}
+  /@chaibuilder/sdk/1.1.2_cfcgkipsm6rw25tarlbc3z4tu4:
+    resolution: {integrity: sha512-jiU/Er1SROlz0E2UVoeVzIHDvILhleUVPgPSD6dRSILmxmoNGUPCZcH7ePVimW9VRWkjGUY2Nv0X7HiZJA/l4w==}
     dependencies:
       '@bobthered/tailwindcss-palette-generator': 3.1.1
-      '@chaibuilder/runtime': 0.1.6_tailwindcss@3.4.1
+      '@chaibuilder/runtime': 0.1.8_tailwindcss@3.4.1
       '@floating-ui/dom': 1.4.5
       '@floating-ui/react-dom': 2.0.1_biqbaboplfbrettd7655fr4n2y
       '@mhsdesign/jit-browser-tailwindcss': 0.4.0
