@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@chaibuilder/runtime': ^0.1.8
-  '@chaibuilder/sdk': ^1.1.5
+  '@chaibuilder/sdk': ^1.1.6
   '@radix-ui/react-icons': ^1.3.0
   '@types/lodash': ^4.14.202
   '@types/react': ^18.2.43
@@ -30,7 +30,7 @@ specifiers:
 
 dependencies:
   '@chaibuilder/runtime': 0.1.8_tailwindcss@3.4.1
-  '@chaibuilder/sdk': 1.1.5_cfcgkipsm6rw25tarlbc3z4tu4
+  '@chaibuilder/sdk': 1.1.6_cfcgkipsm6rw25tarlbc3z4tu4
   '@radix-ui/react-icons': 1.3.0_react@18.2.0
   '@vercel/analytics': 1.1.3
   jotai: 2.6.5_eteh3so6nztr56vqc4nbg6qqla
@@ -95,8 +95,8 @@ packages:
       - tailwindcss
     dev: false
 
-  /@chaibuilder/sdk/1.1.5_cfcgkipsm6rw25tarlbc3z4tu4:
-    resolution: {integrity: sha512-tpiUWP7JgVkNYGTjFBfihNdTb/Ho/r7qhCnF73ZCLPVQsGnE1E6ioCw4/5OC5B3pMp8asVYr+bl+e65UzXuoDw==}
+  /@chaibuilder/sdk/1.1.6_cfcgkipsm6rw25tarlbc3z4tu4:
+    resolution: {integrity: sha512-k9P2Vc+ZU+OVbA/XWQbrRA8vLSlfkIqkjc10GcmngQQWWITGjhWUFyYVDvBbYpiKoroBhenuDG1UVH1cVr2QnQ==}
     dependencies:
       '@bobthered/tailwindcss-palette-generator': 3.1.1
       '@chaibuilder/runtime': 0.1.8_tailwindcss@3.4.1
