@@ -6,16 +6,11 @@ import "./data-providers";
 import { Analytics } from "@vercel/analytics/react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Preview from "./Preview.tsx";
+import "@chaibuilder/sdk/web-blocks";
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "/preview",
-    element: <Preview />,
-  },
+  { path: "/", element: <App /> },
+  { path: "/preview", element: <Preview /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
