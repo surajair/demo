@@ -43,7 +43,7 @@ function App() {
         blocks={blocks}
         dataProviders={providers}
         brandingOptions={brandingOptions}
-        onSavePage={async ({ blocks, providers }) => {
+        onSavePage={async ({ blocks, providers }: any) => {
           setBlocks(blocks);
           setProviders(providers);
           return true;

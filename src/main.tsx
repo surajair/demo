@@ -6,7 +6,8 @@ import "./data-providers";
 import { Analytics } from "@vercel/analytics/react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Preview from "./Preview.tsx";
-import "@chaibuilder/sdk/web-blocks";
+import { loadWebBlocks } from "@chaibuilder/sdk/web-blocks";
+loadWebBlocks();
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
